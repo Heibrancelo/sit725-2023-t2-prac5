@@ -17,13 +17,12 @@ const addCards = (items) => {
 
 
 // Submit Form 
-const submitForm = () => {
+const formSubmitted = () => {
   let formData = {};
-  formData.imagePath = $("#image_path").val();
-  formData.firstName = $("#first_name").val();
-  formData.lastName = $("#last_name").val();
-  formData.description = $("#description").val();
-  formData.email = $("#email").val();
+  formData.title = $('#title').val();
+  formData.subTitle = $('#subTitle').val();
+  formData.path = $('#path').val();
+  formData.description = $('#description').val();
 
   console.log("Form Data Submitted: ", formData);
   postCat(formData);
